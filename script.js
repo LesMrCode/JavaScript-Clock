@@ -25,13 +25,9 @@ function updateClock24() {
     document.getElementById("date").textContent = dateString;
 }
 
-
-
-
-
-
 updateClock24();
 setInterval(updateClock24, 1000);
+
 
 
 
