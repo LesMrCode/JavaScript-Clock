@@ -1,0 +1,85 @@
+/* Styling for the clock */
+.clock {
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/* animation for clock*/
+#clock {
+    color: #0ff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #0ff;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+}
+
+/*Styling for date*/
+.date {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* animation for date*/
+#date {
+    color: #0ff;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #0ff;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+    }
+}
+
+/* Styling for the background of the clock */
+.container-clock {
+    position: relative;
+    height: 60vh;
+    color: white;
+    overflow: hidden;
+}
+
+/* This adds a dark overlay ontop of the hero asset picture */
+.container-clock {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/clock-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    z-index: -1;
+}
+
+@media (max-width:768px) {
+    .clock {
+        display: flex;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
